@@ -40,6 +40,7 @@ struct bt_mesh_cdb_node {
 struct bt_mesh_cdb_subnet {
 	uint16_t net_idx;
 
+	bool kr_flag;
 	uint8_t kr_phase;
 
 	struct {
