@@ -1189,7 +1189,7 @@ static void store_pending_seq(void)
 
 void bt_mesh_store_seq(void)
 {
-	if (CONFIG_BT_MESH_SEQ_STORE_RATE > 1 &&
+	if (CONFIG_BT_MESH_SEQ_STORE_RATE &&
 	    (bt_mesh.seq % CONFIG_BT_MESH_SEQ_STORE_RATE)) {
 		return;
 	}
